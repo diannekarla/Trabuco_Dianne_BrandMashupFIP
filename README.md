@@ -12,18 +12,20 @@ Two brands will be assigned and an entirely new brand must be created by 'mashin
 * CSS
 * Javascript
 
-## Homepage
+## Landing
 ![LandingPage](images/landing.png "Landing Page")
+
+## Homepage
 
 ![HomePage](images/home.png "Homepage")
 
 ## About Page
 ![AboutPage](images/about.png "About Page")
 
-## Works
+## Products Page
 ![ProductsPage](images/products.png "Products Page")
 
-## Journal
+## Advertisement Page
 ![AdPage](images/ad.png "Advertisement Page")
 
 ## Contact Us
