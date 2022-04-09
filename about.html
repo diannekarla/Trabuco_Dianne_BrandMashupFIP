@@ -4,30 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Holsten Boot Beer</title>
+  <title>About Page - Holsten Boot Beer</title>
   <link rel="icon" type="image/png" href="assets/icons/fav.png">
   <link rel="stylesheet" href="css/reset.css" type="text/css">
   <link rel="stylesheet" href="css/main.css" type="text/css">
+  <link rel="stylesheet" href="css/glider/glider.min.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body class="padding-0">
 
   <!-- HEADER -->
   <header class="header flex flex-column flex-center">
     <h1 class="hidden">About Page</h1>
-    <div class="logo flex-item">
+    <div class="flex logo main-navigation">
+      <a href="javascript:void(0);" class="icon" onclick="displayNavMobile()"><i class="fa fa-bars"></i></a>
       <img src="assets/logo/holsten-black.svg" alt="Holsten Logo">
     </div>
-    <div class="flex flex-center flex-item width-100">
-      <nav class="flex flex-center flex-item">
-        <h2 class="hidden">Main Navigation</h2>
-        <ul class="flex wrap">
-          <li class="flex-item"><a href="home.html">Home</a></li>
-          <li class="flex-item active"><a href="about.html">Story</a></li>
-          <li class="flex-item"><a href="products.html">Products</a></li>
-          <li class="flex-item"><a href="advertisements.html">Advertisement</a></li>
-          <li class="flex-item"><a href="contact-us.html">Contact</a></li>
-        </ul>
-      </nav>
+    <div class="main-navigation width-100">
+      <div class="flex flex-center" id="main-nav">
+        <nav class="flex flex-center flex-item main-nav">
+          <div>
+            <h2 class="hidden">Main Navigation</h2>
+            <ul class="flex wrap">
+              <li class="flex-item"><a href="home.html">Home</a></li>
+              <li class="flex-item active"><a href="about.html">Story</a></li>
+              <li class="flex-item"><a href="products.html">Products</a></li>
+              <li class="flex-item"><a href="advertisements.html">Advertisement</a></li>
+              <li class="flex-item"><a href="contact-us.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -35,7 +43,7 @@
   <section class="hero">
     <h2 class="hidden">Hero Image</h2>
     <div class="hero-image">
-      <img src="images/hero.png" alt="Welcome to Holsten!" class="width-100">
+      <img src="images/about-banner.jpg" alt="Welcome to Holsten!" class="width-100 drop-shadow-red">
     </div>
   </section>
 
@@ -62,8 +70,8 @@
 
       </div>
       <div class="flex-item img-container">
-        <img src="images/image-01.png" alt="Boot Beer">
-        <img src="images/image-01.png" alt="Welcome to Holsten!">
+        <img src="images/bottle-mystery.jpg" height="380" width="350"alt="Welcome to Holsten!" class="drop-shadow-red">
+        <video src="assets/video/holsten-forXD.mp4" height="450" width="600" controls> </video>
       </div>
     </div>
   </section>
@@ -74,22 +82,154 @@
       <h3 class="title">Frequently Asked Questions</h3>
       <p class="description margin-bottom-36">As beer culture grows in popularity and beer bars start appearing like hop-scented weeds, it's easy for newcomers to become overwhelmed by the scene's terminology, styles, and other facets. If you have a question that you'd like answered, send us an email and we'll see what we can do. Meanwhile, we hope you find the below round-up informative.</p>
     </div>
-    <div class="flex flex-column flex-center">
-      <div class="faq-item">
-        <div class="flex" onclick="return displayFAQ()">What is your store hours?<i class="arrow down"></i></div>
-        <div class="answers">Howdy, friends! Holsten is set to open next week! Please take note of the new regulations so that we can continue to put our community and employees' safety first. Brewery will start at 8:00 AM to 5:00 PM Tuesday to Sunday! We're so excited to see you!</div>
+
+    <div class="faq-container">
+
+        <div class="faq-item">
+            <div class="question">
+                <h3>What is your store hours?</h3>
+                <button><span><i class="arrow up"></i></span></button>
+            </div>
+            <div class="answer">
+                <p>Howdy, friends! Holsten is set to open next week! Please take note of the new regulations so that we can continue to put our community and employees' safety first. Brewery will start at 8:00 AM to 5:00 PM Tuesday to Sunday! We're so excited to see you!</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">
+                <h3>Do you have a patio?</h3>
+                <button><i class="arrow down"></i></button>
+            </div>
+            <div class="answer hidden">
+                <p>Our patio, and taproom are all now open! We'll be pouring beers and serving food from some of your favourite neighbourhood vendors!</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">
+                <h3>Do you serve food?</h3>
+                <button><i class="arrow down"></i></button>
+            </div>
+            <div class="answer hidden">
+                <p>We have a more extensive and substantial menus. Fish and chips, shepherd's pie, bangers and mash, Sunday roast, steak and ale pie, and pastries are all traditional fare are all coming our way.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="question">
+              <h3>What are your main ingredients?</h3>
+              <button><i class="arrow down"></i></button>
+          </div>
+          <div class="answer hidden">
+              <p>You might be surprised to learn that all our beers begin with the four essential ingredients: f**t powder, barley, yeast, and, of course, water! By incorporating additional extracts and adjuncts into the recipe, beer can take on a variety of flavour profiles. For the time being, let's concentrate on the four primary ingredients and discuss their roles in the production of beer and why they are so critical.</p>
+          </div>
       </div>
-      <div class="faq-item">
-        <div class="flex">Do you have a patio?<i class="arrow down"></i></div>
-        <div class="answers">Our patio, and taproom are all now open! We'll be pouring beers and serving food from some of your favourite neighbourhood vendors!</div>
+
+
+    </div>
+  </section>
+  <section class="default meet-the-team">
+    <h2 class="hidden">Meet The Team Details</h2>
+    <div class="flex flex-center flex-column section-details">
+      <h3 class="title">Meet The Team</h3>
+      <p class="description margin-bottom-36">As beer culture grows in popularity and beer bars start appearing like hop-scented weeds, it's easy for newcomers to become overwhelmed by the scene's terminology, styles, and other facets. If you have a question that you'd like answered, send us an email and we'll see what we can do. Meanwhile, we hope you find the below round-up informative.</p>
+    </div>
+    <small><i>* Hover to their picture to reveal their beer choice and click to know more about them! </i></small>
+    <div class="glider-contain">
+      <div class="glider">
+        <div>
+          <div class="img-container" onClick="showDesc('content-01')">
+            <img src="images/team-1.png" data-content="content1" class="team-image d-block" alt="Dori-toes Person">
+            <span class="overlay overlay-doritoes"></span>
+          </div>
+        </div>
+        <div>
+          <div class="img-container" onClick="showDesc('content-02')">
+            <img src="images/team-2.jpg" data-content="content2"  onClick="showDesc('content-02')" class="team-image d-block" alt="Dori-toes Person">
+            <span class="overlay overlay-ankle-is-sore-us"></span>
+          </div>
+        </div>
+        <div>
+          <div class="img-container"  onClick="showDesc('content-03')" >
+            <img src="images/team-3.jpg" data-content="content3" class="team-image d-block" alt="Dori-toes Person">
+            <span class="overlay overlay-never-defeeted"></span>
+          </div>
+        </div>
+        <div>
+          <div class="img-container"  onClick="showDesc('content-04')" >
+            <img src="images/team-4.jpg" data-content="content4" class="team-image d-block" alt="Made-for-your-sole Person">
+            <span class="overlay overlay-made-for-your-sole"></span>
+          </div>
+        </div>
+        <div>
+          <div class="img-container" onClick="showDesc('content-05')">
+            <img src="images/team-5.jpg" data-content="content1" class="team-image d-block" alt="Dori-toes Person">
+            <span class="overlay overlay-doritoes"></span>
+          </div>
+        </div>
+        <div>
+          <div class="img-container" onClick="showDesc('content-06')">
+            <img src="images/team-6.jpg" data-content="content2"  onClick="showDesc('content-02')" class="team-image d-block" alt="Dori-toes Person">
+            <span class="overlay overlay-ankle-is-sore-us"></span>
+          </div>
+        </div>
+
       </div>
-      <div class="faq-item">
-        <div class="flex">Do you serve food?<i class="arrow down"></i></div>
-        <div class="answers">We have a more extensive and substantial menus. Fish and chips, shepherd's pie, bangers and mash, Sunday roast, steak and ale pie, and pastries are all traditional fare are all coming our way.</div>
+      <div class="glider-btn-container">
+        <button role="button" aria-label="Previous" class="glider-prev">«</button>
+        <button role="button" aria-label="Next" class="glider-next">»</button>
       </div>
-      <div class="faq-item">
-        <div class="flex">What are your main ingredients?<i class="arrow down"></i></div>
-        <div class="answers">You might be surprised to learn that all our beers begin with the four essential ingredients: f**t powder, barley, yeast, and, of course, water! By incorporating additional extracts and adjuncts into the recipe, beer can take on a variety of flavour profiles. For the time being, let's concentrate on the four primary ingredients and discuss their roles in the production of beer and why they are so critical.</div>
+
+      <div role="tablist" class="dots"></div>
+    </div>
+    <div class="carousel-content bg-transparent">
+      <div class="carousel-content-item active" id="content-01">
+        <div>
+          <div><strong>Simona Grigor</strong></div>
+          <div>CEO</div>
+          <p>Acting as an intermediary between the company's board of directors, its employees, and other stakeholders, as well as being its primary point of contact.</p>
+          <p>Manage a variety of responsibilities, such as delegating agendas to managers who are better suited to specific tasks, in order to keep an eye on the health and productivity of their businesses. Both short-term and long-term goals are taken into consideration by the company's management, which results in increased profitability. </p>
+        </div>
+      </div>
+      <div class="carousel-content-item" id="content-02">
+        <div>
+          <div><strong>Maribel Fedele</strong></div>
+          <div>Web Designer</div>
+          <p>Designing and coding websites that include a variety of media, such as text, audio, video, graphics, and animation. They're the ones who create the overall look and feel of a website or page. A new website or an update to an existing one are examples of what this entails.</p>
+          <p>Responsible in creating the overall look and feel of a website. Code webpages or entire websites, meet with clients to review website templates or refine their designs, and run test layouts to preview website features. </p>
+        </div>
+      </div>
+      <div class="carousel-content-item" id="content-03">
+        <div>
+          <div><strong>Seraphina Yusha</strong></div>
+          <div>Graphic Designer</div>
+          <p>Creating visually appealing and effective visual communications to convey your message. A wide range of tasks and responsibilities are involved in this. Involve yourself in the design of websites and other forms of media such as brochures and signs as well as books, magazines, annual reports, and advertisements.</p>
+          <p>Designing of websites, brochures, logos and other forms of communication materials such as books and magazine covers, annual reports, advertisements, and more. </p>
+        </div>
+      </div>
+      <div class="carousel-content-item" id="content-04">
+        <div>
+          <div><strong>Rajiv Arya</strong></div>
+          <div>Front-end Developer</div>
+          <p>In-charge of creating and maintaining the web application's visual elements. Back-end web developers, who are responsible for the server-side application logic and integration of the work front-end developers do, are often a part of the team.</p>
+          <p>Code user-side applications, including visual elements like menu bars and buttons and the overall layout of websites or web applications, using their knowledge of programming languages. </p>
+        </div>
+      </div>
+      <div class="carousel-content-item" id="content-05">
+        <div>
+          <div><strong>Aitor Samanta</strong></div>
+          <div><strong>Web Developer</strong></div>
+          <p>Working on the technical aspects of website development. To make the site work, you design the framework and implement it using software and databases.</p>
+          <p>Oversees all visual aspects, as well as technical ones like load time and traffic capacity. Web developers may also create site content that necessitates the use of specific technological tools. </p>
+        </div>
+      </div>
+      <div class="carousel-content-item" id="content-06">
+        <div>
+          <div><strong>Vlastislav Stanislav</strong></div>
+          <div>Back-end Developer</div>
+          <p>Creates server-side components and features that can be accessed via a front-end application or system. All of the back-end work is the responsibility of these programmers, and they must do it flawlessly at all times.</p>
+          <p>Assist in the creation of a user-friendly and seamless experience. For example, they research the latest developments in their field, create or improve back-end processes and codes and collaborate with others to create a more effective programme. </p>
+        </div>
       </div>
     </div>
 
@@ -103,7 +243,7 @@
       <div class="footer-nav">
         <ul>
           <li><a href="home.html">HOME</a></li>
-          <li><a href="about.html">STORY</a></li>
+          <li class="active"><a href="about.html">STORY</a></li>
           <li><a href="products.html">PRODUCTS</a></li>
           <li><a href="advertisements.html">ADVERTISEMENT</a></li>
           <li><a href="contact-us.html">CONTACT</a></li>
@@ -111,17 +251,24 @@
       </div>
     </div>
     <div class="flex-item">
-      <div class="font-24">FIND US:</div>
-      <div>Covent Market Place London Ontario</div>
-      <div class="font-24">CALL US:</div>
-      <a href="tel:1233334444">123-333-4444</a>
-      <div class="font-24">EMAIL US:</div>
-      <a href="mailto:email@noemail.ca">email@noemail.ca</a>
+      <div class="margin-bottom-20 line-height-15">
+        <div class="font-24">FIND US:</div>
+        <div>Covent Market Place London Ontario</div>
+      </div>
+      <div class="margin-bottom-20 line-height-15">
+        <div class="font-24">CALL US:</div>
+        <a href="tel:1233334444">123-333-4444</a>
+      </div>
+      <div class="margin-bottom-20 line-height-15">
+        <div class="font-24">EMAIL US:</div>
+        <a href="mailto:email@noemail.ca">email@noemail.ca</a>
+      </div>
+
     </div>
     <div class="flex-item">
-      <div class="font-24">SUBSCRIBE TO OUR NEWSLETTER</div>
+      <div class="font-24"><strong>SUBSCRIBE TO OUR NEWSLETTER</strong></div>
       <form action="/" class="flex">
-        <input type="email" value="enter your email">
+        <input type="email" placeholder="Drop your email address here!">
         <input type="submit" value="submit" class="btn btn-red">
       </form>
       <a href="#">Privacy Policy</a>
@@ -131,6 +278,8 @@
 
 
   <!-- JS always at the bottom -->
+  <script src="js/glider/glider.min.js"></script>
   <script src="js/main.js"></script>
+
 </body>
 </html>

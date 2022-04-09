@@ -4,105 +4,170 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Holsten Boot Beer</title>
+  <title>Products Page - Holsten Boot Beer</title>
   <link rel="icon" type="image/png" href="assets/icons/fav.png">
   <link rel="stylesheet" href="css/reset.css" type="text/css">
   <link rel="stylesheet" href="css/main.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="padding-0">
 
   <!-- HEADER -->
   <header class="header flex flex-column flex-center">
     <h1 class="hidden">Products Page</h1>
-    <div class="logo flex-item">
+    <div class="flex logo main-navigation">
+      <a href="javascript:void(0);" class="icon" onclick="displayNavMobile()"><i class="fa fa-bars"></i></a>
       <img src="assets/logo/holsten-black.svg" alt="Holsten Logo">
     </div>
-    <div class="flex flex-center flex-item width-100">
-      <nav class="flex flex-center flex-item">
-        <h2 class="hidden">Main Navigation</h2>
-        <ul class="flex wrap">
-          <li class="flex-item"><a href="home.html">Home</a></li>
-          <li class="flex-item"><a href="about.html">Story</a></li>
-          <li class="flex-item"><a href="products.html">Products</a></li>
-          <li class="flex-item"><a href="advertisements.html">Advertisement</a></li>
-          <li class="flex-item"><a href="contact-us.html">Contact</a></li>
-        </ul>
-      </nav>
+    <div class="main-navigation width-100">
+      <div class="flex flex-center" id="main-nav">
+        <nav class="flex flex-center flex-item main-nav">
+          <div>
+            <h2 class="hidden">Main Navigation</h2>
+            <ul class="flex wrap">
+              <li class="flex-item"><a href="home.html">Home</a></li>
+              <li class="flex-item"><a href="about.html">Story</a></li>
+              <li class="flex-item active"><a href="products.html">Products</a></li>
+              <li class="flex-item"><a href="advertisements.html">Advertisement</a></li>
+              <li class="flex-item"><a href="contact-us.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
   </header>
-
   <!-- SECTIONS -->
-  <section class="hero">
-    <h2 class="hidden">Hero Image</h2>
-    <div class="hero-image">
-      <img src="images/hero.png" alt="Welcome to Holsten!" class="width-100">
+  <section class="bottle-information">
+    <div class="flex flex-center flex-column section-details">
+      <h2 class="title">BEHOLD....</h2>
+      <p class="description">We give you only the best that there is when it comes to beer, <strong>hover and click on the bottle to know how!</strong></p>
+    </div>
+    <div class="flex bottle-container">
+      <div class="flex-item">
+        <div class="flex flex-column bottle-slider">
+          <div>
+            <img src="assets/bottles/ankle-sore.png" id="ankle-slider" data-target="ankle" alt="ankle" onClick="changeImage(this)" />
+          </div>
+          <div>
+            <img src="assets/bottles/dori-toes.png" id="doritoes-slider" data-target="doritoes" alt="doritoes" onClick="changeImage(this)" />
+          </div>
+          <div>
+            <img src="assets/bottles/never-de-feeted.png" id="never-slider" data-target="never" alt="dever-defeeted" onClick="changeImage(this)" />
+          </div>
+          <div>
+            <img src="assets/bottles/made-for-your-sole.png" id="made-slider" data-target="made" alt="made-for-your-sole" onClick="changeImage(this)" />
+          </div>
+        </div>
+      </div>
+      <div class="flex-item">
+        <div class="flex flex-column bottle-parts">
+          <div class="flex">
+            <img src="assets/sliced-images/doritoes/section-01.png" alt="beer01" id="cap" class="main-bottle cap-img" onClick="displayLabel(this)">
+            <div class="bottle-label cap" id="cap-label">
+                <div>
+                  <div>
+                      <p>Cap & Head Shape</p>
+                      <p>The cap, neck, and basic shape of the bottle are formed under pressure by gravity-feeding gobs of molten glass into the forming machine.</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="flex">
+            <img src="assets/sliced-images/doritoes/section-02.png" alt="beer01" id="bottle" class="main-bottle bottle-img" onClick="displayLabel(this)">
+            <div class="bottle-label bottle" id="bottle-label">
+              <div>
+                <div>
+                  <p>Bottle & Temperature</p>
+                  <p>Beers are safely stored in a range between about 45°F (7°C) and 65°F (18°C) for long periods of time. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex">
+            <img src="assets/sliced-images/doritoes/section-03.png" alt="beer01" id="beer" class="main-bottle beer-img" onClick="displayLabel(this)">
+            <div class="bottle-label beer" id="beer-label">
+              <div>
+                <div>
+                  <p>Beer & Brand</p>
+                  <p>A vinyl/polyester label is applied with glue and self-contained decals; the labels are stacked and pressure-sensitive.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-
   <section class="default about-us flex flex-center flex-column">
     <div class="flex flex-center flex-column section-details">
       <h2 class="title">Product Variations</h2>
       <p class="description">There are over 100 distinct styles of beer (over 73 ales, over 25 lagers, and a few hybrid styles), but Holsten beers is unique.</p>
     </div>
     <div class="product-items">
-      <div class="flex flex-center wrap flex-gap-2">
+      <div class="flex flex-center wrap flex-gap-2" id="product-01">
         <div class="flex flex-center">
-          <img src="assets/tmp/beer-boot-40-ounces.jpg" alt="Boot Beer">
+          <img src="images/beer-poster/ankle-poster1.png" alt="Boot Beer" class="drop-shadow-red">
         </div>
         <div  class="flex-item">
+          <h3>Ankle-Is-Sore-Us Dino</h3>
           <p>The majority of beers are classified as lagers or ales. Lagers are fermented with yeast that grows at the bottom of the beer mixture, while ales are fermented with yeast that grows at the top. Apart from the yeast used to make lagers and ales, there are yeasts that ferment spontaneously, producing wild or sour beers.</p>
           <br>
-          <a href="#" class="btn btn-red">Add To Cart</a>
+          <button class="btn btn-red">Add To Cart</button>
         </div>
       </div>
-      <div class="flex flex-center wrap flex-gap-2">
+      <div class="flex flex-center wrap flex-gap-2" id="product-02">
         <div class="flex flex-center">
-          <img src="assets/tmp/beer-boot-40-ounces.jpg" alt="Boot Beer">
+          <img src="images/beer-poster/never-defeeted2.png" alt="Boot Beer" class="drop-shadow-red">
         </div>
         <div  class="flex-item">
+          <h3>Never De-Feeted!</h3>
           <p>The yeast used in the production of ale ferments throughout the beer and settles to the top. It is more tolerant of alcohol and ferments at higher temperatures than the yeast used to make lager. Top fermenting ales include IPAs, stouts, and wheat beers.</p>
           <br>
-          <a href="#" class="btn btn-red">Add To Cart</a>
+          <button class="btn btn-red">Add To Cart</button>
         </div>
       </div>
-      <div class="flex flex-center wrap flex-gap-2">
+      <div class="flex flex-center wrap flex-gap-2" id="product-03">
         <div class="flex flex-center">
-          <img src="assets/tmp/beer-boot-40-ounces.jpg" alt="Boot Beer">
+          <img src="images/beer-poster/dori-toes1.png" alt="Boot Beer" class="drop-shadow-red">
         </div>
         <div  class="flex-item">
+          <h3>Dori-Toes Brew!</h3>
           <p>Lager yeast is more delicate than ale yeast, and it settles to the bottom of the liquid vessel following fermentation. It requires a slower rate of fermentation and lower temperatures than the yeast used in ale production, and it has a lower tolerance for alcohol. Bottom fermenting lagers include pilsners, bocks, and Okerberfests.</p>
           <br>
-          <a href="#" class="btn btn-red">Add To Cart</a>
+          <button class="btn btn-red">Add To Cart</button>
         </div>
       </div>
-      <div class="flex flex-center wrap flex-gap-2">
+      <div class="flex flex-center wrap flex-gap-2" id="product-04">
         <div class="flex flex-center">
-          <img src="assets/tmp/beer-boot-40-ounces.jpg" alt="Boot Beer">
+          <img src="images/beer-poster/made1.png" alt="Boot Beer" class="drop-shadow-red">
         </div>
         <div  class="flex-item">
+          <h3>Made For Your Sole</h3>
           <p>Lambics and sour beers are produced using a technique known as spontaneous fermentation. When beer is exposed to wild bacteria and yeast, this type of fermentation occurs. Although these beers originated in Belgium, brewers worldwide have discovered ways to manipulate this process to create their own sour, funky-tasting beers. </p>
           <br>
-          <a href="#" class="btn btn-red">Add To Cart</a>
+          <button class="btn btn-red">Add To Cart</button>
         </div>
       </div>
-      <div class="flex flex-center wrap flex-gap-2">
+      <div class="flex flex-center wrap flex-gap-2" id="product-05">
         <div class="flex flex-center">
-          <img src="assets/tmp/beer-boot-40-ounces.jpg" alt="Boot Beer">
+          <img src="images/beer-poster/custom.png" alt="Boot Beer" class="drop-shadow-red">
         </div>
         <div  class="flex-item">
+          <h3>Pack'o Feet!</h3>
           <p>Barleywines earned their name due to their strength and complexity, which are similar to those of wine. The strongest Barleywine beers have an ABV that is closer to that of wines than to that of beers. Due to the high alcohol content of Barleywine, the beer ages exceptionally well — much like fine wine!</p>
           <br>
-          <a href="#" class="btn btn-red">Add To Cart</a>
+          <button class="btn btn-red">Add To Cart</button>
         </div>
       </div>
-      <div class="flex flex-center wrap flex-gap-2">
+      <div class="flex flex-center wrap flex-gap-2" id="product-06">
         <div class="flex flex-center">
-          <img src="assets/tmp/beer-boot-40-ounces.jpg" alt="Boot Beer">
+          <img src="images/beer-poster/package.png" alt="Boot Beer" class="drop-shadow-red">
         </div>
         <div  class="flex-item">
+          <h3>Feet For Everyone!</h3>
           <p>Golden Ales are pale to medium-blonde ales with a mild bitterness and maltiness. These pale ales are typically clear, crisp, and dry, which makes them a good match for light-colored foods.</p>
           <br>
-          <a href="#" class="btn btn-red">Add To Cart</a>
+          <button class="btn btn-red">Add To Cart</button>
         </div>
       </div>
     </div>
@@ -112,6 +177,7 @@
     <div class="flex flex-center flex-column section-details">
       <h2 class="title">Enjoy a Custom Boot Beer!</h2>
       <p class="description">We are pleased to offer customised brews for your brand or special event! A batch of beer may be packaged in a variety of ways depending on your needs. Additionally, customised labelling is available for any bottled product. Contact us and let's talk about your favourite beer!</p>
+      <a href="contact-us.html#contact-form" class="btn btn-red">Contact Us NOW!</a>
     </div>
   </section>
 
@@ -122,26 +188,33 @@
       <img src="assets/logo/holsten-black.svg" alt="Holsten Logo">
       <div class="footer-nav">
         <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">Story</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="advertisements.html">Advertisement</a></li>
-          <li><a href="contact-us.html">Contact</a></li>
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="about.html">STORY</a></li>
+          <li class="active"><a href="products.html">PRODUCTS</a></li>
+          <li><a href="advertisements.html">ADVERTISEMENT</a></li>
+          <li><a href="contact-us.html">CONTACT</a></li>
         </ul>
       </div>
     </div>
     <div class="flex-item">
-      <div class="font-24">FIND US:</div>
-      <div>Covent Market Place London Ontario</div>
-      <div class="font-24">CALL US:</div>
-      <a href="tel:1233334444">123-333-4444</a>
-      <div class="font-24">EMAIL US:</div>
-      <a href="mailto:email@noemail.ca">email@noemail.ca</a>
+      <div class="margin-bottom-20 line-height-15">
+        <div class="font-24">FIND US:</div>
+        <div>Covent Market Place London Ontario</div>
+      </div>
+      <div class="margin-bottom-20 line-height-15">
+        <div class="font-24">CALL US:</div>
+        <a href="tel:1233334444">123-333-4444</a>
+      </div>
+      <div class="margin-bottom-20 line-height-15">
+        <div class="font-24">EMAIL US:</div>
+        <a href="mailto:email@noemail.ca">email@noemail.ca</a>
+      </div>
+
     </div>
     <div class="flex-item">
-      <div class="font-24">SUBSCRIBE TO OUR NEWSLETTER</div>
+      <div class="font-24"><strong>SUBSCRIBE TO OUR NEWSLETTER</strong></div>
       <form action="/" class="flex">
-        <input type="email" value="enter your email">
+        <input type="email" placeholder="Drop your email address here!">
         <input type="submit" value="submit" class="btn btn-red">
       </form>
       <a href="#">Privacy Policy</a>

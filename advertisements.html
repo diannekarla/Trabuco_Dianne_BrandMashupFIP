@@ -4,30 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Holsten Boot Beer</title>
+  <title>Advertise Page - Holsten Boot Beer</title>
   <link rel="icon" type="image/png" href="assets/icons/fav.png">
   <link rel="stylesheet" href="css/reset.css" type="text/css">
   <link rel="stylesheet" href="css/main.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="padding-0">
 
   <!-- HEADER -->
   <header class="header flex flex-column flex-center">
     <h1 class="hidden">Advertisement Page</h1>
-    <div class="logo flex-item">
+    <div class="flex logo main-navigation">
+      <a href="javascript:void(0);" class="icon" onclick="displayNavMobile()"><i class="fa fa-bars"></i></a>
       <img src="assets/logo/holsten-black.svg" alt="Holsten Logo">
     </div>
-    <div class="flex flex-center flex-item width-100">
-      <nav class="flex flex-center flex-item">
-        <h2 class="hidden">Main Navigation</h2>
-        <ul class="flex wrap">
-          <li class="flex-item"><a href="home.html">Home</a></li>
-          <li class="flex-item"><a href="about.html">Story</a></li>
-          <li class="flex-item"><a href="products.html">Products</a></li>
-          <li class="flex-item"><a href="advertisements.html">Advertisement</a></li>
-          <li class="flex-item"><a href="contact-us.html">Contact</a></li>
-        </ul>
-      </nav>
+    <div class="main-navigation width-100">
+      <div class="flex flex-center" id="main-nav">
+        <nav class="flex flex-center flex-item main-nav">
+          <div>
+            <h2 class="hidden">Main Navigation</h2>
+            <ul class="flex wrap">
+              <li class="flex-item"><a href="home.html">Home</a></li>
+              <li class="flex-item"><a href="about.html">Story</a></li>
+              <li class="flex-item"><a href="products.html">Products</a></li>
+              <li class="flex-item active"><a href="advertisements.html">Advertisement</a></li>
+              <li class="flex-item"><a href="contact-us.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -35,7 +41,7 @@
   <section class="hero">
     <h2 class="hidden">Hero Image</h2>
     <div class="hero-image">
-      <img src="images/hero.png" alt="Welcome to Holsten!" class="width-100">
+      <img src="images/advert-banner.png" alt="Welcome to Holsten!" class="width-100 drop-shadow-red">
     </div>
   </section>
 
@@ -45,24 +51,37 @@
       <h3 class="title">Join Us!</h3>
       <p class="description margin-bottom-36">Let us demonstrate our COMMITMENT to fostering a culture of moderation and responsible consumption. Invests alongside us in strategic alliances with organisations that are market leaders in their respective fields.</p>
     </div>
-    <img src="images/hero.png" alt="Boot Beer" class="width-100">
-    <div class="flex flex-gap-2 wrap advertisements">
-      <img src="assets/tmp/beer-boot-40-ounces.jpg" alt="Boot Beer" class="flex-item width-100">
-      <img src="assets/tmp/beer-boot-40-ounces.jpg" alt="Boot Beer" class="flex-item width-100">
-    </div>
-    <div class="flex flex-gap-2 wrap advertisements">
-      <img src="assets/tmp/beer-boot-40-ounces.jpg" alt="Boot Beer" class="flex-item width-100">
-      <img src="assets/tmp/beer-boot-40-ounces.jpg" alt="Boot Beer" class="flex-item width-100">
+    <div class="flex flex-gap-2 wrap advertisements flex-row">
+      <a href="products.html#product-05"><img src="assets/bottles/ankle-sore.svg" alt="Boot Beer" class="flex-item width-100"></a>
+      <a href="products.html#product-01"><img src="assets/bottles/dori-toes.svg" alt="Boot Beer" class="flex-item width-100"></a>
+      <a href="products.html#product-02"><img src="assets/bottles/made.png" alt="Boot Beer" class="flex-item width-100"></a>
+      <a href="products.html#product-03"><img src="assets/bottles/never-de-feeted.svg" alt="Boot Beer" class="flex-item width-100"></a>
+      <a href="products.html#product-05"><img src="assets/bottles/ankle-sore.svg" alt="Boot Beer" class="flex-item width-100"></a>
+      <a href="products.html#product-01"><img src="assets/bottles/dori-toes.svg" alt="Boot Beer" class="flex-item width-100"></a>
+      <a href="products.html#product-02"><img src="assets/bottles/made.png" alt="Boot Beer" class="flex-item width-100"></a>
+      <a href="products.html#product-03"><img src="assets/bottles/never-de-feeted.svg" alt="Boot Beer" class="flex-item width-100"></a>
+      <a href="products.html#product-05"><img src="assets/bottles/ankle-sore.svg" alt="Boot Beer" class="flex-item width-100"></a>
+      <a href="products.html#product-01"><img src="assets/bottles/dori-toes.svg" alt="Boot Beer" class="flex-item width-100"></a>
     </div>
   </section>
-
+  <section>
+    <h2 class="hidden">Informecial and Promo Image</h2>
+    <div class="width-100 bg-transparent margin-bottom-20 padding-20">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, dolorem! Error doloremque voluptatum a quibusdam inventore sunt sequi ratione quia saepe modi, ex, suscipit doloribus, culpa quaerat ipsam nobis! Nam!
+    </div>
+    <div class="flex flex-gap-2">
+      <div class="bg-transparent padding-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga laborum quisquam voluptate incidunt harum voluptas, optio id neque quod tempore illo laboriosam obcaecati in, iusto distinctio rem ipsum, commodi quibusdam!</div>
+      <div class="bg-transparent padding-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga laborum quisquam voluptate incidunt harum voluptas, optio id neque quod tempore illo laboriosam obcaecati in, iusto distinctio rem ipsum, commodi quibusdam!</div>
+    </div>
+  </section>
   <section class="default">
     <h2 class="hidden">Work With Us Content</h2>
     <div class="flex flex-center flex-column section-details">
       <h3 class="title">Work With Us!</h3>
       <p class="description margin-bottom-36">Interested in working at Holsten? We don't blame you – from our incredible culture to our delicious beers, we believe it's an excellent place to work. Contact us for more details!</p>
+      <a href="contact-us.html#contact-form" class="btn btn-red">Contact Us NOW!</a><br><br>
     </div>
-    <img src="images/hero.png" alt="Boot Beer" class="width-100">
+    <img src="images/banner.png" alt="Boot Beer" class="width-100">
   </section>
 
   <!-- FOOTER -->
@@ -72,26 +91,33 @@
       <img src="assets/logo/holsten-black.svg" alt="Holsten Logo">
       <div class="footer-nav">
         <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">Story</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="advertisements.html">Advertisement</a></li>
-          <li><a href="contact-us.html">Contact</a></li>
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="about.html">STORY</a></li>
+          <li><a href="products.html">PRODUCTS</a></li>
+          <li class="active"><a href="advertisements.html">ADVERTISEMENT</a></li>
+          <li><a href="contact-us.html">CONTACT</a></li>
         </ul>
       </div>
     </div>
     <div class="flex-item">
-      <div class="font-24">FIND US:</div>
-      <div>Covent Market Place London Ontario</div>
-      <div class="font-24">CALL US:</div>
-      <a href="tel:1233334444">123-333-4444</a>
-      <div class="font-24">EMAIL US:</div>
-      <a href="mailto:email@noemail.ca">email@noemail.ca</a>
+      <div class="margin-bottom-20 line-height-15">
+        <div class="font-24">FIND US:</div>
+        <div>Covent Market Place London Ontario</div>
+      </div>
+      <div class="margin-bottom-20 line-height-15">
+        <div class="font-24">CALL US:</div>
+        <a href="tel:1233334444">123-333-4444</a>
+      </div>
+      <div class="margin-bottom-20 line-height-15">
+        <div class="font-24">EMAIL US:</div>
+        <a href="mailto:email@noemail.ca">email@noemail.ca</a>
+      </div>
+
     </div>
     <div class="flex-item">
-      <div class="font-24">SUBSCRIBE TO OUR NEWSLETTER</div>
+      <div class="font-24"><strong>SUBSCRIBE TO OUR NEWSLETTER</strong></div>
       <form action="/" class="flex">
-        <input type="email" value="enter your email">
+        <input type="email" placeholder="Drop your email address here!">
         <input type="submit" value="submit" class="btn btn-red">
       </form>
       <a href="#">Privacy Policy</a>

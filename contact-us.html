@@ -4,30 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Holsten Boot Beer</title>
+  <title>Contact Us Page - Holsten Boot Beer</title>
   <link rel="icon" type="image/png" href="assets/icons/fav.png">
   <link rel="stylesheet" href="css/reset.css" type="text/css">
   <link rel="stylesheet" href="css/main.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="padding-0">
 
   <!-- HEADER -->
   <header class="header flex flex-column flex-center">
     <h1 class="hidden">Contact Us Page</h1>
-    <div class="logo flex-item">
-      <img src="assets/logo/prop-logo-black.svg" alt="Holsten Logo">
+    <div class="flex logo main-navigation">
+      <a href="javascript:void(0);" class="icon" onclick="displayNavMobile()"><i class="fa fa-bars"></i></a>
+      <img src="assets/logo/holsten-black.svg" alt="Holsten Logo">
     </div>
-    <div class="flex flex-center flex-item width-100">
-      <nav class="flex flex-center flex-item">
-        <h2 class="hidden">Main Navigation</h2>
-        <ul class="flex wrap">
-          <li class="flex-item"><a href="home.html">Home</a></li>
-          <li class="flex-item"><a href="about.html">Story</a></li>
-          <li class="flex-item"><a href="products.html">Products</a></li>
-          <li class="flex-item"><a href="advertisements.html">Advertisement</a></li>
-          <li class="flex-item"><a href="contact-us.html">Contact</a></li>
-        </ul>
-      </nav>
+    <div class="main-navigation width-100">
+      <div class="flex flex-center" id="main-nav">
+        <nav class="flex flex-center flex-item main-nav">
+          <div>
+            <h2 class="hidden">Main Navigation</h2>
+            <ul class="flex wrap">
+              <li class="flex-item"><a href="home.html">Home</a></li>
+              <li class="flex-item"><a href="about.html">Story</a></li>
+              <li class="flex-item"><a href="products.html">Products</a></li>
+              <li class="flex-item"><a href="advertisements.html">Advertisement</a></li>
+              <li class="flex-item active"><a href="contact-us.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -35,7 +41,7 @@
   <section class="hero">
     <h2 class="hidden">Hero Image</h2>
     <div class="hero-image">
-      <img src="images/hero.png" alt="Welcome to Holsten!" class="width-100">
+      <img src="images/contact-banner.png" alt="Welcome to Holsten!" class="width-100 drop-shadow-red">
     </div>
   </section>
 
@@ -53,9 +59,9 @@
         <li>Sunday - 8:00 AM to 5:00 PM</li>
       </ul>
     </div>
-    <img src="images/hero.png" alt="Boot Beer" class="width-100">
+    <img src="images/contact-banner1.png" alt="Boot Beer" class="width-100 drop-shadow-red">
   </section>
-  <section class="default flex flex-column flex-center contact-us">
+  <section class="default flex flex-column flex-center contact-us" id="contact-form">
     <h2 class="hidden">Delivery Offers</h2>
     <div class="flex flex-center flex-column font-24 text-center margin-bottom-36">
       <p>Looking to deliver beer at your doorstep? Have a question?</p>
@@ -65,10 +71,10 @@
     </div>
     <form action="#" class="flex flex-column flex-item">
       <div class="flex flex-gap-2 wrap">
-        <input type="text" placeholder="ENTER YOUR FULLNAME" class="flex-item">
-        <input type="email" placeholder="ENTER YOUR EMAIL ADDRESS" class="flex-item">
+        <input type="text" placeholder="What's your name?" class="flex-item">
+        <input type="email" placeholder="What's your email address?" class="flex-item">
       </div>
-      <textarea name="message" cols="30" rows="10" class="flex-item"></textarea>
+      <textarea name="message" cols="30" rows="10" class="flex-item" placeholder="What do you want us to know?"></textarea>
       <input type="submit" class="btn btn-red" value="Submit">
     </form>
   </section>
@@ -80,26 +86,33 @@
       <img src="assets/logo/holsten-black.svg" alt="Holsten Logo">
       <div class="footer-nav">
         <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">Story</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="advertisements.html">Advertisement</a></li>
-          <li><a href="contact-us.html">Contact</a></li>
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="about.html">STORY</a></li>
+          <li><a href="products.html">PRODUCTS</a></li>
+          <li><a href="advertisements.html">ADVERTISEMENT</a></li>
+          <li class="active"><a href="contact-us.html">CONTACT</a></li>
         </ul>
       </div>
     </div>
     <div class="flex-item">
-      <div class="font-24">FIND US:</div>
-      <div>Covent Market Place London Ontario</div>
-      <div class="font-24">CALL US:</div>
-      <a href="tel:1233334444">123-333-4444</a>
-      <div class="font-24">EMAIL US:</div>
-      <a href="mailto:email@noemail.ca">email@noemail.ca</a>
+      <div class="margin-bottom-20 line-height-15">
+        <div class="font-24">FIND US:</div>
+        <div>Covent Market Place London Ontario</div>
+      </div>
+      <div class="margin-bottom-20 line-height-15">
+        <div class="font-24">CALL US:</div>
+        <a href="tel:1233334444">123-333-4444</a>
+      </div>
+      <div class="margin-bottom-20 line-height-15">
+        <div class="font-24">EMAIL US:</div>
+        <a href="mailto:email@noemail.ca">email@noemail.ca</a>
+      </div>
+
     </div>
     <div class="flex-item">
-      <div class="font-24">SUBSCRIBE TO OUR NEWSLETTER</div>
+      <div class="font-24"><strong>SUBSCRIBE TO OUR NEWSLETTER</strong></div>
       <form action="/" class="flex">
-        <input type="email" value="enter your email">
+        <input type="email" placeholder="Drop your email address here!">
         <input type="submit" value="submit" class="btn btn-red">
       </form>
       <a href="#">Privacy Policy</a>

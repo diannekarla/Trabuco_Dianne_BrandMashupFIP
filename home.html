@@ -4,30 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Holsten Boot Beer</title>
+  <title>Homepage - Holsten Boot Beer</title>
   <link rel="icon" type="image/png" href="assets/icons/fav.png">
   <link rel="stylesheet" href="css/reset.css" type="text/css">
   <link rel="stylesheet" href="css/main.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="padding-0">
 
   <!-- HEADER -->
   <header class="header flex flex-column flex-center">
     <h1 class="hidden">Home Page</h1>
-    <div class="logo flex-item">
+    <div class="flex logo main-navigation">
+      <a href="javascript:void(0);" class="icon" onclick="displayNavMobile()"><i class="fa fa-bars"></i></a>
       <img src="assets/logo/holsten-black.svg" alt="Holsten Logo">
     </div>
-    <div class="flex flex-center flex-item width-100">
-      <nav class="flex flex-center flex-item">
-        <h2 class="hidden">Main Navigation</h2>
-        <ul class="flex wrap">
-          <li class="flex-item active"><a href="home.html">Home</a></li>
-          <li class="flex-item"><a href="about.html">Story</a></li>
-          <li class="flex-item"><a href="products.html">Products</a></li>
-          <li class="flex-item"><a href="advertisements.html">Advertisement</a></li>
-          <li class="flex-item"><a href="contact-us.html">Contact</a></li>
-        </ul>
-      </nav>
+    <div class="main-navigation width-100">
+      <div class="flex flex-center" id="main-nav">
+        <nav class="flex flex-center flex-item main-nav">
+          <div>
+            <h2 class="hidden">Main Navigation</h2>
+            <ul class="flex wrap">
+              <li class="flex-item active"><a href="home.html">Home</a></li>
+              <li class="flex-item"><a href="about.html">Story</a></li>
+              <li class="flex-item"><a href="products.html">Products</a></li>
+              <li class="flex-item"><a href="advertisements.html">Advertisement</a></li>
+              <li class="flex-item"><a href="contact-us.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -40,10 +46,11 @@
         <p>Excellent beer that has been crafted for an active lifestyle.
         <br>Hydration is imminent.</p>
       </div>
-      <a href="#" class="btn btn-red">See More</a>
+      <button class="btn btn-red" onClick="scrollNextFold()">See More</button>
+
     </div>
     <div class="flex-item hero-image hidden-mobile">
-      <img src="assets/tmp/German-Beer-Boot.webp" alt="Welcome to Holsten!" class="width-100">
+      <img src="images/never-defeeted.png" alt="Welcome to Holsten!" class="width-100 drop-shadow-red">
     </div>
   </section>
 
@@ -51,67 +58,73 @@
     <!-- <h2 class="hidden">Product Variations Content</h2> -->
     <div class="flex flex-center flex-column wrap section-details">
       <h2 class="title">Product Variations</h2>
-      <p class="description">There are over 100 distinct styles of beer (over 73 ales, over 25 lagers, and a few hybrid styles), but Holsten beers is unique.</p>
+      <p class="description">There are over 100 distinct styles of beer (over 73 ales, over 25 lagers, and a few hybrid styles), <br> but Holsten beers is unique.</p>
     </div>
     <div class="flex flex-gap wrap product-variations">
       <div class="flex-item text-center">
-        <img src="assets/tmp/beer-boot-40-ounces.jpg" alt="Boot Beer">
-        <h3>Never De-Feeted!</h3>
-        <p>Silky Delicate</p>
+          <img src="images/beer-flavours/never-defeeted.png" alt="Boot Beer" class="drop-shadow-red">
+          <h3><a href="products.html#product-01">Never De-Feeted!</a></h3>
+          <p>Silky Delicate</p>
       </div>
       <div class="flex-item text-center">
-        <img src="assets/tmp/beer-boot-40-ounces.jpg" alt="Boot Beer">
-        <h3>Ankle-Is-Sore-Us Dino</h3>
+        <img src="images/beer-flavours/ankle-sore.png" alt="Boot Beer" class="drop-shadow-red">
+        <h3><a href="products.html#product-02">Ankle-Is-Sore-Us Dino</a></h3>
         <p>Soften Smooth</p>
       </div>
       <div class="flex-item text-center">
-        <img src="assets/tmp/beer-boot-40-ounces.jpg" alt="Boot Beer">
-        <h3>Dori-toes Brew</h3>
+        <img src="images/beer-flavours/dori-toes-brew.png" alt="Boot Beer" class="drop-shadow-red">
+        <h3><a href="products.html#product-03">Dori-Toes Brew!</a></h3>
         <p>Soothing Minty Fresh</p>
       </div>
       <div class="flex-item text-center">
-        <img src="assets/tmp/beer-boot-40-ounces.jpg" alt="Boot Beer">
-        <h3>Made For Your Sole</h3>
+        <img src="images/beer-flavours/made-for-your-sole.png" alt="Boot Beer" class="drop-shadow-red">
+        <h3><a href="products.html#product-04">Made For Your Sole</a></h3>
         <p>Calming Healing</p>
       </div>
     </div>
 
   </section>
 
-  <section class="flex flex-gap-3 wrap mission-vision">
+  <section class="flex flex-gap-3 wrap mission-vision bg-transparent">
     <h2 class="hidden">Our Mission and Vision</h2>
-    <div class="flex-item flex flex-column flex-center">
-      <h4>Our Mission</h4>
-      <p>Our mission is to make your drinking experience more enjoyable by creating variaty of draft beers that has tastes like you never had before. Aroma that you never have thought you wanted and needed. </p>
-      <p>We take pride with creating draft beer flavors that are also enjoyable for everyone so you can share the same old party activities but with something new to talk about. </p>
-      <p><strong>"Hey, have you tried that boot beer from Holsten?" </strong>will always be the phrase you will be hearing moving forward. This we promise you.</p>
+    <div>
+      <h4 class="text-red">Our Mission</h4>
+      <div class="flex-item flex flex-column flex-center">
+        <p>Our mission is to make your drinking experience more enjoyable by creating variaty of draft beers that has tastes like you never had before. Aroma that you never have thought you wanted and needed. </p>
+        <p>We take pride with creating draft beer flavors that are also enjoyable for everyone so you can share the same old party activities but with something new to talk about. </p>
+        <p><strong>"Hey, have you tried that boot beer from Holsten?" </strong>will always be the phrase you will be hearing moving forward. This we promise you.</p>
+      </div>
     </div>
-    <div class="flex-item flex flex-column flex-center">
-      <h4>Our Vision</h4>
-      <p>We vision for the company to be the leading provider on the industry specializing with flavoring draft beers. This vision would open on different business branches and would cater everyone's need and preferrences for drinking. </p>
-      <p>We aim to take part into innovation by partnering with different draft beers providers and matching it with our unique set of flavours allowing us to extend the quality of our drinks.</p>
-      <p>As the year progress, the company will aim to sustain its excellence assuring that the flavors of our draft beers are relevant to different generations through out the years.</p>
+    <div>
+      <h4  class="text-red">Our Vision</h4>
+      <div class="flex-item flex flex-column flex-center">
+        <p>We vision for the company to be the leading provider on the industry specializing with flavoring draft beers. This vision would open on different business branches and would cater everyone's need and preferrences for drinking. </p>
+        <p>We aim to take part into innovation by partnering with different draft beers providers and matching it with our unique set of flavours allowing us to extend the quality of our drinks.</p>
+        <p>As the year progress, the company will aim to sustain its excellence assuring that the flavors of our draft beers are relevant to different generations through out the years.</p>
+      </div>
     </div>
+
   </section>
 
   <section class="default">
     <div class="flex flex-center flex-column section-details">
       <h2 class="title">Design to Deliver</h2>
+      <p class="description">We make sure all of our process are carefully crafted from the recipe to the techniques only to bring <br> the best beer you can have.</p>
       <p class="description"></p>
     </div>
     <div class="flex flex-gap-3 wrap designs-to-deliver">
-      <div class="flex-item">
-        <img src="assets/tmp/beer-boot-40-ounces.jpg" alt="Boot Beer">
+      <div class="flex-item bg-transparent">
+        <img src="images/malt.jpg" alt="Boot Beer" class="drop-shadow-red">
         <p><strong>Simplicity</strong> – A great beer recipe should contain only the ingredients necessary to achieve the desired flavour profile. Each ingredient should serve a purpose, and anything that is superfluous to your objective should be omitted. For instance, nearly all beer styles can be created using only a base malt and 1-2 specialty malts.</p>
         <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ullam tempora qui inventore, quasi dolores placeat odio laudantium veritatis beatae quam aliquam autem accusamus temporibus optio soluta adipisci sit labore!</p> -->
       </div>
-      <div class="flex-item">
-        <img src="assets/tmp/beer-boot-40-ounces.jpg" alt="Boot Beer">
+      <div class="flex-item bg-transparent">
+        <img src="images/hop malt.jpg" alt="Boot Beer" class="drop-shadow-red">
         <p><strong>Balance</strong> – The finished beer's flavours and aromas should be balanced on multiple dimensions – whether it's the hop-malt ratio, the aroma ratio, the gravity-alcohol ratio, and so on... This is not to say that all beers fall on the same scale. For instance, it would be decidedly hoppy in terms of hop-malt ratio. However, it should not be an overly bitter hop bomb; it should retain a smooth and drinkable hoppy bitterness and aroma.</p>
         <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ullam tempora qui inventore, quasi dolores placeat odio laudantium veritatis beatae quam aliquam autem accusamus temporibus optio soluta adipisci sit labore!</p> -->
       </div>
-      <div class="flex-item">
-        <img src="assets/tmp/beer-boot-40-ounces.jpg" alt="Boot Beer">
+      <div class="flex-item bg-transparent">
+        <img src="images/ferm.jpg" alt="Boot Beer" class="drop-shadow-red">
         <p><strong>Techniques that Aid Your Beer</strong> - Adjusting temperatures, fermentation profiles – all of these variables can be used to fine-tune the final product. Adjusting the mash temperature, for example, alters the fermentability of the wort, resulting in a full or light-bodied beer. Knowing which techniques produce which results can assist you in determining when to use them in relation to the beer you are brewing.</p>
         <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ullam tempora qui inventore, quasi dolores placeat odio laudantium veritatis beatae quam aliquam autem accusamus temporibus optio soluta adipisci sit labore!</p> -->
       </div>
@@ -126,26 +139,33 @@
       <img src="assets/logo/holsten-black.svg" alt="Holsten Logo">
       <div class="footer-nav">
         <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">Story</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="advertisements.html">Advertisement</a></li>
-          <li><a href="contact-us.html">Contact</a></li>
+          <li class="active"><a href="home.html">HOME</a></li>
+          <li><a href="about.html">STORY</a></li>
+          <li><a href="products.html">PRODUCTS</a></li>
+          <li><a href="advertisements.html">ADVERTISEMENT</a></li>
+          <li><a href="contact-us.html">CONTACT</a></li>
         </ul>
       </div>
     </div>
     <div class="flex-item">
-      <div class="font-24">FIND US:</div>
-      <div>Covent Market Place London Ontario</div>
-      <div class="font-24">CALL US:</div>
-      <a href="tel:1233334444">123-333-4444</a>
-      <div class="font-24">EMAIL US:</div>
-      <a href="mailto:email@noemail.ca">email@noemail.ca</a>
+      <div class="margin-bottom-20 line-height-15">
+        <div class="font-24">FIND US:</div>
+        <div>Covent Market Place London Ontario</div>
+      </div>
+      <div class="margin-bottom-20 line-height-15">
+        <div class="font-24">CALL US:</div>
+        <a href="tel:1233334444">123-333-4444</a>
+      </div>
+      <div class="margin-bottom-20 line-height-15">
+        <div class="font-24">EMAIL US:</div>
+        <a href="mailto:email@noemail.ca">email@noemail.ca</a>
+      </div>
+
     </div>
     <div class="flex-item">
-      <div class="font-24">SUBSCRIBE TO OUR NEWSLETTER</div>
+      <div class="font-24"><strong>SUBSCRIBE TO OUR NEWSLETTER</strong></div>
       <form action="/" class="flex">
-        <input type="email" value="enter your email">
+        <input type="email" placeholder="Drop your email address here!">
         <input type="submit" value="submit" class="btn btn-red">
       </form>
       <a href="#">Privacy Policy</a>
