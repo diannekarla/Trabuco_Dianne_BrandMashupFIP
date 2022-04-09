@@ -15,19 +15,19 @@ Two brands will be assigned and an entirely new brand must be created by 'mashin
 ## Homepage
 ![LandingPage](images/landing.png "Landing Page")
 
-![HomePage](images/home.png "Landing Page")
+![HomePage](images/home.png "Homepage")
 
 ## About Page
-![AboutPage](images/about.png "Landing Page")
+![AboutPage](images/about.png "About Page")
 
 ## Works
-![ProductsPage](images/products.png "Landing Page")
+![ProductsPage](images/products.png "Products Page")
 
 ## Journal
-![AdPage](images/ad.png "Landing Page")
+![AdPage](images/ad.png "Advertisement Page")
 
 ## Contact Us
-![ContactUsPage](images/contact.png "Landing Page")
+![ContactUsPage](images/contact.png "Contact Page")
 
 ## Contributing
 
