@@ -1,4 +1,4 @@
-# Midterm Project Brand Mashup and Marketing
+# HOLSTEN BOOT BEER - Final Integrated Project
 
 The goal is for each student to work individually or
 collaboratively on specifically defined deliverables. These deliverables
@@ -10,6 +10,24 @@ Two brands will be assigned and an entirely new brand must be created by 'mashin
 
 * HTML
 * CSS
+* Javascript
+
+## Homepage
+![LandingPage](images/landing.png "Landing Page")
+
+![HomePage](images/home.png "Landing Page")
+
+## About Page
+![AboutPage](images/about.png "Landing Page")
+
+## Works
+![ProductsPage](images/products.png "Landing Page")
+
+## Journal
+![AdPage](images/ad.png "Landing Page")
+
+## Contact Us
+![ContactUsPage](images/contact.png "Landing Page")
 
 ## Contributing
 
@@ -21,8 +39,18 @@ Two brands will be assigned and an entirely new brand must be created by 'mashin
 
 ## Credits
 
-* https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+* Prof Trev
+* Prof Dayna
+* Prof Jarrod
+* Prof Joe
+
+* Provided links in FOL
+	* https://javascript30.com/
+	* https://www.codementor.io/@johnnyb/javascript-cheatsheet-fb54lz08k
+	* https://docs.panic.com/#css/@font-face
+	* https://css-tricks.com/
+	* https://www.freecodecamp.org/news/git-under-the-hood/
+
 
 ## License
 Dianne Karla Trabuco
