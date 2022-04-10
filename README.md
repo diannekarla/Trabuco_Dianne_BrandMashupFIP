@@ -12,6 +12,8 @@ Two brands will be assigned and an entirely new brand must be created by 'mashin
 * CSS
 * Javascript
 
+Roadmap: https://docs.google.com/document/d/1Ij99wTeGoFth04vjdxt9p1FGm2lmL3juRIAxX9Jk9YI/edit#
+
 ## Landing
 ![LandingPage](images/landing.png "Landing Page")
 
